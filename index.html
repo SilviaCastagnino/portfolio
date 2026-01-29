@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvia | Portfolio Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-theme="dark" data-lang="it">
+  <!-- Header con controlli -->
+  <header>
+    <div class="header-container container">
+      <a href="#home" class="logo">Sil<span>via</span></a>
+
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home" data-key="nav-home">Home</a></li>
+          <li><a href="#skills" data-key="nav-skills">Competenze</a></li>
+          <li><a href="#projects" data-key="nav-projects">Progetti</a></li>
+          <li><a href="#education" data-key="nav-education">Formazione</a></li>
+          <li><a href="#contact" data-key="nav-contact">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+          <span data-key="theme-dark">Scuro</span>
+        </button>
+
+        <div class="language-container">
+          <button class="language-toggle" id="languageToggle">
+            <i class="fas fa-globe"></i>
+            <span>IT</span>
+          </button>
+          <div class="language-options" id="languageOptions">
+            <div class="language-option" data-lang="it">Italiano</div>
+            <div class="language-option" data-lang="en">English</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-key="hero-title">Ciao, sono Silvia <span class="typing-text" id="typingText"></span></h1>
+        <h2 data-key="hero-subtitle">Full Stack Developer & UI/UX Designer</h2>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary" data-key="hero-btn-projects">
+            <i class="fas fa-code"></i> Vedi i miei progetti
+          </a>
+          <a href="#contact" class="btn btn-secondary" data-key="hero-btn-contact">
+            <i class="fas fa-envelope"></i> Contattami
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title" data-key="skills-title">Le mie <span>competenze</span></h2>
+
+      <!-- Skills principali (visibili sempre) -->
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+          <div class="skill-level">★★★★★</div>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+          <div class="skill-level">★★★★★</div>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+          <div class="skill-level">★★★★★</div>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-bootstrap"></i>
+          <span>Bootstrap</span>
+          <div class="skill-level">★★★★★</div>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-wordpress"></i>
+          <span>WordPress</span>
+          <div class="skill-level">★★★★☆</div>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+          <div class="skill-level">★★★★☆</div>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+          <div class="skill-level">★★★★☆</div>
+        </div>
+      </div>
+
+      <!-- Skills aggiuntive (nascoste inizialmente) -->
+      <div class="additional-skills" id="additionalSkills">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+            <div class="skill-level">★★★★☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+            <div class="skill-level">★★★★☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Web Performance</span>
+            <div class="skill-level">★★★★☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-search"></i>
+            <span>SEO</span>
+            <div class="skill-level">★★★★☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Responsive Design</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code"></i>
+            <span>Web Standards</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-lightbulb"></i>
+            <span>Problem Solving</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-users"></i>
+            <span>Team Collaboration</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-comments"></i>
+            <span>Communication</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+            <div class="skill-level">★★★★☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+            <div class="skill-level">★★★☆☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i>
+            <span>UI/UX Design</span>
+            <div class="skill-level">★★★★☆</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-clock"></i>
+            <span>Time Management</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Adaptability</span>
+            <div class="skill-level">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsante per mostrare/nascondere altre skills -->
+      <div class="skills-toggle">
+        <button class="btn btn-secondary" id="toggleSkills">
+          <i class="fas fa-chevron-down"></i>
+          <span data-key="skills-show-more">Mostra tutte le competenze</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-key="projects-title">I miei <span>progetti</span></h2>
+      <div class="projects-grid">
+        <!-- Progetto 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/29/36/10/1000_F_29361048_BZDkzv3FYKg6uOcbtGQPpSu56wOvhvsi.jpg"
+              alt="Simon Game">
+          </div>
+          <div class="project-info">
+            <h3>Simon Game</h3>
+            <p data-key="project1-desc">Un gioco di memoria classico con effetti visivi moderni e suoni interattivi.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://silviacastagnino.github.io/Simon-Game/" target="_blank" class="btn-demo">
+                <i class="fas fa-external-link-alt"></i> View Website
+              </a>
+              <a href="https://github.com/SilviaCastagnino/Simon-Game" target="_blank" class="btn-code">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progetto 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://cdn.milleniumdrums.com/app/uploads/2021/09/HD-120_IMG_01_FULL.jpg" alt="Drum Kit">
+          </div>
+          <div class="project-info">
+            <h3>Drum Kit</h3>
+            <p data-key="project2-desc">Una batteria virtuale interattiva che risponde ai tasti della tastiera e al
+              click.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>CSS3</span>
+              <span>Web Audio API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://silviacastagnino.github.io/Drum-Kit/" target="_blank" class="btn-demo">
+                <i class="fas fa-external-link-alt"></i> View Website
+              </a>
+              <a href="https://github.com/SilviaCastagnino/Drum-Kit" target="_blank" class="btn-code">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progetto 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://w0.peakpx.com/wallpaper/891/195/HD-wallpaper-cookie-tin-puppy-cookie-tin-puppy-dog.jpg"
+              alt="Tin Dog Project">
+          </div>
+          <div class="project-info">
+            <h3>Tin Dog</h3>
+            <p data-key="project3-desc">Sito di incontri per cani con design responsive e interfaccia utente.
+            </p>
+            <div class="project-tech">
+              <span>Bootstrap</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://silviacastagnino.github.io/Tin-Dog-Project/" target="_blank" class="btn-demo">
+                <i class="fas fa-external-link-alt"></i> View Website
+              </a>
+              <a href="https://github.com/SilviaCastagnino/Tin-Dog-Project" target="_blank" class="btn-code">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <a href="projects.html" target="_blank" class="btn btn-secondary" data-key="projects-view-all">
+          <i class="fab fa-github"></i> Vedi tutti i progetti
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <!-- Education Section -->
+  <section id="education" class="education section">
+    <div class="container">
+      <h2 class="section-title" data-key="education-title">La mia <span>formazione</span></h2>
+
+      <div class="education-grid">
+        <!-- Bachelor's Degree -->
+        <div class="education-card">
+          <div class="education-image">
+            <img
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Software Development">
+          </div>
+          <div class="education-info">
+            <h3 data-key="education-bachelor">Bachelor's Degree in Software Development</h3>
+            <p class="education-institution" data-key="education-university">Brigham Young University</p>
+            <p class="education-period" data-key="education-period-bachelor">March 2025 - June 2026</p>
+            <p class="education-desc" data-key="education-desc-bachelor">
+              Emphasis: Software Development<br>
+              Minor: Software Development<br>
+              GPA: 3.0/3.0<br>
+              Academic Scholarship Spring 2026 & Summer 2026
+            </p>
+            <div class="education-tech">
+              <span>Software</span>
+              <span>Development</span>
+              <span>GPA 3.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Associate Degree -->
+        <div class="education-card">
+          <div class="education-image">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Web Development">
+          </div>
+          <div class="education-info">
+            <h3 data-key="education-associate">Associate Degree in Web Development</h3>
+            <p class="education-institution">Brigham Young University</p>
+            <p class="education-period" data-key="education-period-associate">2023 - 2025</p>
+            <p class="education-desc" data-key="education-desc-associate">
+              Focus on modern web technologies, front-end and back-end development.
+              Completed projects in HTML, CSS, JavaScript, and database management.
+            </p>
+            <div class="education-tech">
+              <span>Web Dev</span>
+              <span>Full Stack</span>
+              <span>2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web & Computer Programming Certificate -->
+        <div class="education-card">
+          <div class="education-image">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Programming Certificate">
+          </div>
+          <div class="education-info">
+            <h3 data-key="education-certificate">Web & Computer Programming Certificate</h3>
+            <p class="education-institution" data-key="education-institution-cert">Brigham Young University - Idaho</p>
+            <p class="education-period" data-key="education-period-cert">Completed: August 2025</p>
+            <p class="education-desc" data-key="education-desc-cert">
+              Comprehensive programming certification covering web technologies,
+              computer science fundamentals, and practical coding skills.
+            </p>
+            <div class="education-tech">
+              <span>Coding</span>
+              <span>Certified</span>
+              <span>2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <a href="https://www.linkedin.com/in/silvia-castagnino/details/certifications/" target="_blank"
+          class="btn btn-secondary">
+          <i class="fab fa-linkedin"></i>
+          <span data-key="education-linkedin">Guarda tutte le mie certificazioni su LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title" data-key="contact-title">Contattami <span>ora</span></h2>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xlgboqwa" method="POST">
+        <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio di Silvia!">
+        <input type="hidden" name="_language" id="formLanguage" value="it">
+        <input type="hidden" name="_next" value="#contact">
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="name" data-key="contact-name">Nome</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email" data-key="contact-email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="message" data-key="contact-message">Messaggio</label>
+          <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-key="contact-submit">
+          <i class="fas fa-paper-plane"></i> Invia Messaggio
+        </button>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <h4 data-key="contact-email-title">Email</h4>
+          <p>sylvia19976@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <h4 data-key="contact-phone-title">Telefono</h4>
+          <p>+39 3467537978</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4 data-key="contact-location-title">Località</h4>
+          <p data-key="contact-location">Italia</p>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/SilviaCastagnino" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/silvia-castagnino" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://codepen.io/" target="_blank">
+          <i class="fab fa-codepen"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyright">
+          <p>©<span id="currentyear"></span> | ❤️⚓Silvia Castagnino⚓❤️ | Portfolio</p>
+          <p id="lastModified"></p>
+        </div>
+        <div class="footer-links">
+          <a href="#home" data-key="footer-home">Home</a>
+          <a href="#projects" data-key="footer-projects">Progetti</a>
+          <a href="#education" data-key="footer-education">Formazione</a>
+          <a href="#contact" data-key="footer-contact">Contatti</a>
+          <a href="#" data-key="footer-privacy">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/getdates.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvia | Tutti i Progetti</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body data-theme="dark" data-lang="it">
+  <!-- Header con controlli -->
+  <header>
+    <div class="header-container container">
+      <a href="index.html" class="logo">Sil<span>via</span></a>
+
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" data-key="nav-home">Home</a></li>
+          <li><a href="index.html#skills" data-key="nav-skills">Competenze</a></li>
+          <li><a href="projects.html" class="active" data-key="nav-projects">Progetti</a></li>
+          <li><a href="index.html#education" data-key="nav-education">Formazione</a></li>
+          <li><a href="index.html#contact" data-key="nav-contact">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+          <span data-key="theme-dark">Scuro</span>
+        </button>
+
+        <div class="language-container">
+          <button class="language-toggle" id="languageToggle">
+            <i class="fas fa-globe"></i>
+            <span>IT</span>
+          </button>
+          <div class="language-options" id="languageOptions">
+            <div class="language-option" data-lang="it">Italiano</div>
+            <div class="language-option" data-lang="en">English</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb container">
+    <a href="index.html" data-key="nav-home">Home</a>
+    <i class="fas fa-chevron-right"></i>
+    <span data-key="nav-projects">Progetti</span>
+  </div>
+
+  <!-- Tutti i Progetti -->
+  <section class="all-projects section">
+    <div class="container">
+      <h1 class="section-title" data-key="all-projects-title">Tutti i <span>progetti</span></h1>
+      <p class="projects-intro" data-key="projects-intro">Qui trovi una raccolta completa di tutti i miei progetti.</p>
+
+      <!-- Grid di tutti i progetti -->
+      <div class="projects-grid" id="allProjectsGrid">
+        <!-- I progetti verranno caricati dinamicamente con JavaScript -->
+      </div>
+
+      <!-- Pulsante per tornare alla home -->
+      <div class="back-home">
+        <a href="index.html" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i>
+          <span data-key="back-home">Torna alla Home</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyright">
+          <p>©<span id="currentyear"></span> | ❤️⚓Silvia Castagnino⚓❤️ | Portfolio</p>
+          <p id="lastModified"></p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html" data-key="footer-home">Home</a>
+          <a href="projects.html" data-key="footer-projects">Progetti</a>
+          <a href="index.html#education" data-key="footer-education">Formazione</a>
+          <a href="index.html#contact" data-key="footer-contact">Contatti</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/getdates.js"></script>
+</body>
+
+</html>

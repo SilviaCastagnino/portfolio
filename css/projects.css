@@ -1,0 +1,108 @@
+/* ===== PROJECTS PAGE STYLES ===== */
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 2rem 0;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.breadcrumb a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb i {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.breadcrumb span {
+  color: var(--text-secondary);
+}
+
+/* Titolo e introduzione */
+.projects-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 5rem;
+  color: var(--text-secondary);
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* Grid progetti allargata */
+.all-projects .projects-grid {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Stile card progetti */
+.all-projects .project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-projects .project-image {
+  height: 220px;
+}
+
+.all-projects .project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-projects .project-info p {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+/* Pulsante torna alla home */
+.back-home {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.back-home .btn {
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-top: 7rem;
+    padding: 1.5rem 0;
+  }
+
+  .projects-intro {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .all-projects .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .all-projects .project-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 1.4rem;
+    margin-top: 6rem;
+  }
+}
