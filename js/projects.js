@@ -49,7 +49,7 @@ const projectsData = [
       en: "A classic memory game with modern visual effects and interactive sounds."
     },
     image: "https://as1.ftcdn.net/v2/jpg/00/29/36/10/1000_F_29361048_BZDkzv3FYKg6uOcbtGQPpSu56wOvhvsi.jpg",
-    demoUrl: "https://sylvia19976.github.io/Simon-Game/",
+    demoUrl: "https://silviacastagnino.github.io/Simon-Game/",
     codeUrl: "https://github.com/sylvia19976/Simon-Game",
     technologies: ["HTML5", "CSS3", "JavaScript"]
   },
@@ -60,7 +60,7 @@ const projectsData = [
       en: "An interactive virtual drum kit that responds to keyboard keys and clicks."
     },
     image: "https://cdn.milleniumdrums.com/app/uploads/2021/09/HD-120_IMG_01_FULL.jpg",
-    demoUrl: "https://sylvia19976.github.io/Drum-Kit/",
+    demoUrl: "https://silviacastagnino.github.io/Drum-Kit/",
     codeUrl: "https://github.com/sylvia19976/Drum-Kit",
     technologies: ["JavaScript", "CSS3", "Web Audio API"]
   },
@@ -71,7 +71,7 @@ const projectsData = [
       en: "Dog dating website with responsive design and modern user interface."
     },
     image: "https://w0.peakpx.com/wallpaper/891/195/HD-wallpaper-cookie-tin-puppy-cookie-tin-puppy-dog.jpg",
-    demoUrl: "https://sylvia19976.github.io/Tin-Dog-Project/",
+    demoUrl: "https://silviacastagnino.github.io/Tin-Dog-Project/",
     codeUrl: "https://github.com/sylvia19976/Tin-Dog-Project",
     technologies: ["Bootstrap", "HTML5", "CSS3"]
   },
