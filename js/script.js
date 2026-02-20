@@ -34,11 +34,11 @@ const translations = {
     "education-title": "La mia formazione",
     "education-bachelor": "Laurea Triennale in Sviluppo Software",
     "education-university": "Brigham Young University",
-    "education-period-bachelor": "Marzo 2025 - Giugno 2026",
-    "education-desc-bachelor": "Enfasi: Sviluppo Software<br>Minore: Sviluppo Software<br>Voto: 110/110 con Lode<br>Borsa di Studio Accademica 2025-2026",
-    "education-associate": "Diploma Associato in Sviluppo Web",
-    "education-period-associate": "2025 - 2026",
-    "education-desc-associate": "Focus sulle tecnologie web moderne, sviluppo front-end e back-end. Progetti completati in HTML, CSS, JavaScript e gestione database.",
+    "education-period-bachelor": "Febbraio 2026 - Giugno 2026",
+    "education-desc-bachelor": "Enfasi: Sviluppo Software<br>Minore: Sviluppo Software<br><strong>Voto: 110/110 con Lode</strong><br>Borsa di Studio Accademica: Febbraio 2026 - Giugno 2026<br><br><strong>Corsi principali:</strong> Programmazione Avanzata, Strutture Dati e Algoritmi, Ingegneria del Software, Basi di Dati, Sviluppo Web, Sistemi Operativi",
+    "education-associate": "Laurea Associate in Sviluppo Software",
+    "education-period-associate": "Marzo 2025 - Febbraio 2026",
+    "education-desc-associate": "Enfasi: Sviluppo Software<br><strong>Voto: 110/110 con Lode</strong><br>Borsa di Studio Accademica: Marzo 2025 - Febbraio 2026<br><br><strong>Corsi principali:</strong> Programmazione Java, Strutture Dati, Sviluppo Web, Database SQL<br>Progetti completati in Java, Python, HTML/CSS e JavaScript",
     "education-certificate": "Certificato Web & Computer Programming",
     "education-institution-cert": "Brigham Young University - Idaho",
     "education-period-cert": "Completato: Agosto 2025",
@@ -98,11 +98,11 @@ const translations = {
     "education-title": "My Education",
     "education-bachelor": "Bachelor's Degree in Software Development",
     "education-university": "Brigham Young University",
-    "education-period-bachelor": "March 2025 - June 2026",
-    "education-desc-bachelor": "Emphasis: Software Development<br>Minor: Software Development<br>GPA: 4.0/4.0<br>Academic Scholarship Spring 2026 & Summer 2026",
-    "education-associate": "Associate Degree in Web Development",
-    "education-period-associate": "2023 - 2025",
-    "education-desc-associate": "Focus on modern web technologies, front-end and back-end development. Completed projects in HTML, CSS, JavaScript, and database management.",
+    "education-period-bachelor": "February 2026 - June 2026",
+    "education-desc-bachelor": "Emphasis: Software Development<br>Minor: Software Development<br><strong>GPA: 4.0/4.0</strong><br>Academic Scholarship: Spring 2026 & Summer 2026<br><br><strong>Core Courses:</strong> Advanced Programming, Data Structures and Algorithms, Software Engineering, Databases, Web Development, Operating Systems",
+    "education-associate": "Associate Degree in Software Development",
+    "education-period-associate": "March 2025 - February 2026",
+    "education-desc-associate": "Emphasis: Software Development<br><strong>GPA: 4.0/4.0</strong><br>Academic Scholarship: March 2025 - February 2026<br><br><strong>Core Courses:</strong> Java Programming, Data Structures, Web Development, SQL Databases<br>Completed projects in Java, Python, HTML/CSS, and JavaScript",
     "education-certificate": "Web & Computer Programming Certificate",
     "education-institution-cert": "Brigham Young University - Idaho",
     "education-period-cert": "Completed: August 2025",
@@ -210,7 +210,7 @@ function updateTranslations() {
   document.querySelectorAll('[data-key]').forEach(element => {
     const key = element.dataset.key;
     if (currentTranslations[key]) {
-      // Per elementi che contengono HTML (come <br>)
+      // Per elementi che contengono HTML (come <br> e <strong>)
       if (key.includes('education-desc')) {
         element.innerHTML = currentTranslations[key];
       } else {
