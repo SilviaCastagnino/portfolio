@@ -841,12 +841,10 @@ header {
 
 .contact-form {
   max-width: 550px;
-  /* RIDOTTO da 600px */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  /* RIDOTTO da 2rem */
 }
 
 .form-group {
@@ -857,23 +855,18 @@ header {
 
 .form-group label {
   margin-bottom: 0.4rem;
-  /* RIDOTTO da 0.5rem */
   color: var(--accent-color);
   font-weight: 600;
   font-size: 1.5rem;
-  /* RIDOTTO da 1.6rem */
 }
 
 .form-control {
   padding: 1.2rem;
-  /* RIDOTTO da 1.5rem */
   background: var(--card-background);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  /* RIDOTTO da 10px */
   color: var(--text-color);
   font-size: 1.5rem;
-  /* RIDOTTO da 1.6rem */
   transition: var(--transition);
 }
 
@@ -881,14 +874,57 @@ header {
   outline: none;
   border-color: var(--accent-color);
   box-shadow: 0 0 0 2px rgba(0, 247, 255, 0.1);
-  /* RIDOTTO da 3px */
 }
 
 textarea.form-control {
   min-height: 130px;
-  /* RIDOTTO da 150px */
   resize: vertical;
 }
+
+/* MODIFICA: Centrare il pulsante di invio */
+.contact-form button[type="submit"] {
+  align-self: center;
+  /* Centra il pulsante */
+  width: auto;
+  min-width: 200px;
+  /* Larghezza minima per evitare che sia troppo piccolo */
+}
+
+/* Mobile (max 767px) */
+@media (max-width: 767px) {
+  .contact-form button[type="submit"] {
+    align-self: center;
+    width: 100%;
+    /* Su mobile occupa tutta la larghezza */
+    max-width: 280px;
+    /* Ma con un massimo per non essere troppo largo */
+    margin: 0 auto;
+    /* Centrato */
+    justify-content: center;
+  }
+
+  /* Se vuoi che il pulsante sia ancora più evidente su mobile */
+  .contact-form button[type="submit"] i {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Schermi molto piccoli (max 480px) */
+@media (max-width: 480px) {
+  .contact-form button[type="submit"] {
+    max-width: 250px;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.contact-info {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.2rem;
+}
+
+/* ... resto del codice contact ... */
 
 .contact-info {
   margin-top: 4rem;
