@@ -322,6 +322,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navList = document.querySelector('.nav-list');
   const contactForm = document.getElementById('contactForm');
   const toggleSkillsBtn = document.getElementById('toggleSkills');
+  // Resetta il pulsante del form quando la pagina viene caricata
+  const contactSubmitBtn = document.querySelector('#contactForm button[type="submit"]');
+  if (contactSubmitBtn) {
+    // Ripristina il testo originale del pulsante
+    const currentLang = document.body.dataset.lang;
+    const submitText = currentLang === 'it' ? 'Invia Messaggio' : 'Send Message';
+
+    contactSubmitBtn.innerHTML = `<i class="fas fa-paper-plane"></i> ${submitText}`;
+    contactSubmitBtn.disabled = false;
+  }
 
   // Inizializza il testo della digitazione
   initTypingText();
