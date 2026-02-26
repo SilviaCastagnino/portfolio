@@ -279,11 +279,75 @@ header {
 .mobile-menu-btn {
   display: none;
   font-size: 2.2rem;
-  /* RIDOTTO da 2.5rem */
   background: none;
   border: none;
   color: var(--text-color);
   cursor: pointer;
+  margin-left: auto;
+  /* AGGIUNGI QUESTA RIGA per spingere il pulsante a destra */
+}
+
+/* Modifica anche la sezione Mobile (max 767px) */
+@media (max-width: 767px) {
+  .header-container {
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Mantiene il logo a sinistra */
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-right: auto;
+    /* Spinge il logo a sinistra */
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    order: 3;
+    /* Posiziona il pulsante dopo i controlli */
+  }
+
+  .controls {
+    display: flex;
+    gap: 1rem;
+    order: 2;
+    /* Mantiene i controlli al centro */
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--background);
+    flex-direction: column;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    gap: 1.2rem;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list a {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .theme-toggle,
+  .language-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 /* ===== HERO SECTION ===== */
